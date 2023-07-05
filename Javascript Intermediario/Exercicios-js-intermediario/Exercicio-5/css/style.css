@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.slides{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.slides.mostrar{
+    opacity: 1;
+}
+
+.slide1{
+    background-image: url(../images/imagem\ 1.jpg);
+}
+
+.slide2{
+    background-image: url(../images/imagem\ 2.jpg);
+}
+
+.slide3{
+    background-image: url(../images/imagem\ 3.jpg);
+}
+
+.slide4{
+    background-image: url(../images/imagem\ 4.jpg);
+}
+
+.seta{
+    position: absolute;
+    z-index: 1;
+}
+
+.btn-voltar{
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.btn-avancar{
+    right: 4%;
+}
+
+.seta .imagem-seta{
+    width: 50%;
+    height: 50%;
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
+
+.slides .informacoes{
+    background-color: white;
+    margin-left: 180px;
+    padding: 65px 60px;
+    width: 620px;
+    border-radius: 10px;
+}
+
+.slides .informacoes .titulo{
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+.slides .informacoes p{
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.slides .informacoes .saiba-mais{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.slide1 .informacoes .saiba-mais{
+    color: #C50000;
+}
+
+.slide2 .informacoes .saiba-mais{
+    color: #D9DD10;
+}
+
+.slide3 .informacoes .saiba-mais{
+    color: #A63A17;
+}
+
+.slide4 .informacoes .saiba-mais{
+    color: #10ACDD;
+}
